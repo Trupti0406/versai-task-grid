@@ -1,5 +1,3 @@
-
-
 .card {
   position: relative;
   overflow: hidden;
@@ -44,9 +42,11 @@
   gap: 20px;
   padding: 20px 10px;
 }
+
 .card:hover .card-overlay {
   opacity: 1;
 }
+
 .card-overlay {
   position: absolute;
   top: 0;
@@ -55,29 +55,37 @@
   height: 100%;
   background-color: rgb(51, 51, 58);
   color: white;
-  padding: 20px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  display: flex; 
+  display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   font-size: small;
 }
 
-.card-overlay .card-title{
-  bottom: 0;
-  font-size: small
-  
+.card-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
 }
+
+.card-overlay .card-title {
+  bottom: 0;
+}
+
 .card-overlay .card-description,
 .card-overlay {
-  text-align: center; /* Center text within the overlay */
-  font-size: small;
+  text-align: center;
+
 }
-.card-description{
+
+.card-description {
   font-size: large;
 }
+
 /* Tablet layout: 2 columns */
 @media (min-width: 768px) {
   .grid-container {
