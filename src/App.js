@@ -1,9 +1,13 @@
 import "./App.css";
+import Card from "./Component/Card";
+import { imageData } from "./utils/imageData";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Versai Task Grid</h1>
+    <div className="grid-container">
+      {imageData.map((image, index) => (
+        <Card key={index} src={image.src} title={image.title} />
+      ))}
     </div>
   );
 }
