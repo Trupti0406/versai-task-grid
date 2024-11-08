@@ -11,6 +11,7 @@ const Card = ({ src, title, description }) => {
           <h3>{title}</h3>
           <br />
           {description}
+          <h5>Read More {"<"} </h5>
         </div>
       </div>
     </div>
