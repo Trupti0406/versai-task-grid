@@ -9,9 +9,8 @@ const Card = ({ src, title, description }) => {
       <div className="card-overlay">
         <div className="card-description">
           <h3>{title}</h3>
-          <br />
-          {description}
-          <h5>Read More {"<"} </h5>
+          <h4>{description}</h4>
+          <h5>Read More {">"} </h5>
         </div>
       </div>
     </div>
